@@ -10,8 +10,9 @@ class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+    
+    def greet(self):
+        print("Hello. My name is " + self.name)
 
 p = Person("John", 21)
-
-print(p.name)
-print(p.age)
+p.greet()
