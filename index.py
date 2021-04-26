@@ -71,22 +71,36 @@
 # for i in range(0, len(metal)):
 #     print(metal[i])
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
     
-    def greet(self):
-        print("Hello. My name is " + self.name + ". I am " + str(self.age) + " years old.")
+#     def greet(self):
+#         print("Hello. My name is " + self.name + ". I am " + str(self.age) + " years old.")
 
-p = Person("John", 21)
+# p = Person("John", 21)
 
-p.greet() # ...I am 21...
-p.age = 27
-p.greet() # ...I am 27...
+# p.greet() # ...I am 21...
+# p.age = 27
+# p.greet() # ...I am 27...
 
-del p.age
-print(p.greet()) # Error
+# del p.age
+# print(p.greet()) # Error
 
-del p
-print(p.age) # Error
+# del p
+# print(p.age) # Error
+
+x = 1
+y = "Rogers"
+print(type(x))
+print(type(y))
+
+print(type(x) is int) # True
+print(type(y) is int) # False
+
+print(type(x) is str) # False
+print(type(y) is str) # True
+
+print(isinstance(x, int)) # True
+print(isinstance(y, str)) # True
