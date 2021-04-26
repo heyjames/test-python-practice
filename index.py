@@ -56,17 +56,37 @@
 # stop = len(any_string)
 # print(any_string.find('is', start, stop)) # 2. Returns start index of substring
 
-x = -1
-if x < 0:
-    raise Exception("Numbers below zero are not allowed.")
+# x = -1
+# if x < 0:
+#     raise Exception("Numbers below zero are not allowed.")
 
-myList = ["Tony Stark", "Steve Rogers"]
-for element in myList:
-    print(element)
+# myList = ["Tony Stark", "Steve Rogers"]
+# for element in myList:
+#     print(element)
 
-for i in range(0, 4):
-    print(i, "I can do this all day.")
+# for i in range(0, 4):
+#     print(i, "I can do this all day.")
 
-metal = "Vibranium"
-for i in range(0, len(metal)):
-    print(metal[i])
+# metal = "Vibranium"
+# for i in range(0, len(metal)):
+#     print(metal[i])
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        print("Hello. My name is " + self.name + ". I am " + str(self.age) + " years old.")
+
+p = Person("John", 21)
+
+p.greet() # ...I am 21...
+p.age = 27
+p.greet() # ...I am 27...
+
+del p.age
+print(p.greet()) # Error
+
+del p
+print(p.age) # Error
