@@ -91,16 +91,27 @@
 # del p
 # print(p.age) # Error
 
-x = 1
-y = "Rogers"
-print(type(x))
-print(type(y))
+# x = 1
+# y = "Rogers"
+# print(type(x))
+# print(type(y))
 
-print(type(x) is int) # True
-print(type(y) is int) # False
+# print(type(x) is int) # True
+# print(type(y) is int) # False
 
-print(type(x) is str) # False
-print(type(y) is str) # True
+# print(type(x) is str) # False
+# print(type(y) is str) # True
 
-print(isinstance(x, int)) # True
-print(isinstance(y, str)) # True
+# print(isinstance(x, int)) # True
+# print(isinstance(y, str)) # True
+
+x = 2 # Type error
+# x = "2" # Success
+try:
+    print(x + ". Hi")
+except NameError:
+    print("Variable is not defined")
+except TypeError:
+    print("Type error")
+except:
+    print("Something else went wrong")
